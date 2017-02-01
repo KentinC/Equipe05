@@ -18,20 +18,20 @@
 HEADER
 
 -------------------------------------------->
+    <!-- header -->
     <header>
-
-      <input type="checkbox" id="menu-toggle"/>
+      <input type="checkbox" id="menu-toggle" />
       <label id="trigger" for="menu-toggle"></label>
       <label id="burger" for="menu-toggle"></label>
       <ul id="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Culture coco</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a class="headerMenu" href="#" alt="home">Home</a></li>
+        <li><a class="headerMenu" href="#" alt="culture">Culture coco</a></li>
+        <li><a class="headerMenu" href="#" alt="nos produits">Nos produits</a></li>
+        <li><a class="headerMenu" href="#" alt="événements">Evenements</a></li>
+        <li><a class="headerMenu" href="#" alt="contact">Contact</a></li>
       </ul>
-
       <div class="logo">
-        <a class="index" href="index.html"><img src="../images/logo.png" alt="vaivai" class="vaivai"></a>
+        <a href="index.html"><img src="../images/logo.png" alt="vaivai" class="vaivai"></a>
       </div>
     </header>
     <!----------------------------------------------
@@ -163,7 +163,7 @@ FIRST LINE
 ----------------------------------------------->
       <div class="row" data-equalizer="bloc2">
         <div class="columns large-6 medium-6 small-12 fond_vertClair" data-equalizer-watch="bloc2">
-          <img src="../images/eau_nos_produits.png" alt="eau de coco" class="imgHeight">
+          <img src="../images/eau_nos_produits.png" alt="eau de coco" class="imgHeight" id="blueColor">
         </div>
         <div class="columns large-6 medium-6 small-12" data-equalizer-watch="bloc2">
           <div id="bloc1">
@@ -200,7 +200,7 @@ SECOND LINE
 
       <div class="row" data-equalizer="bloc2">
         <div id="shadow" class="columns large-6 medium-6 small-12" data-equalizer-watch="bloc2">
-          <img src="../images/cuisine_nos_produits.png" alt="plat cuisiné"  class="imgHeight">
+          <img src="../images/cuisine_nos_produits.png" alt="plat cuisiné"  class="imgHeight greenColor">
         </div>
         <div class="columns large-6 medium-6 small-12 " data-equalizer-watch="bloc2">
           <div id="bloc2">
@@ -226,7 +226,7 @@ SECOND LINE
           </div>
         </div>
         <div class="columns large-6 medium-6 small-12" data-equalizer-watch="bloc2">
-          <img src="../images/cuisine_nos_produits.png" alt="plat cuisiné" class="imgHeight" id="move">
+          <img src="../images/cuisine_nos_produits.png" alt="plat cuisiné" class="imgHeight greenColor" id="move">
         </div>
       </div>
 
@@ -238,7 +238,7 @@ THIRD LINE
 ----------------------------------------------->
       <div class="row" data-equalizer="bloc2">
         <div class="columns large-6 medium-6 small-12" data-equalizer-watch="bloc2" >
-          <img src="../images/snack_nos_produits.png" alt="pétales de coco" class="imgHeight">
+          <img src="../images/snack_nos_produits.png" alt="pétales de coco" class="imgHeight" id="orangeColor">
         </div>
         <div class="columns large-6 medium-6 small-12" data-equalizer-watch="bloc2">
           <div id="bloc3">
@@ -283,14 +283,14 @@ SCRIPT FOUNDATION & SLICK
         speed: 300,
         autoplaySpeed: 1000,
         responsive: [
-                  {
-                    breakpoint: 640,
-                    settings: {
-                      slidesToShow: 1,
-                      slidesToScroll: 1,
-                      infinite: true,
-                      dots: true
-                  }
+          {
+            breakpoint: 640,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true
+            }
           }]
       });
     });
