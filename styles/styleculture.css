@@ -457,9 +457,6 @@ div,
     height: 270px;
     padding: 10px 30px;
   }
-    .button {
-    z-index:-10; 
-  }
 }
 
 
@@ -521,7 +518,6 @@ COMPATIBILITY intro
   .intro {
     padding: 100px 100px;
   }
-  .titre {}
   .txtTitre {
     margin: 0 200px;
   }
@@ -568,6 +564,9 @@ COMPATIBILITY intro
     text-align: center;
     display: inline-block;
   }
+      .txtTitre {
+    margin: 0 80px;
+  }
 
 }
 
@@ -580,7 +579,7 @@ COMPATIBILITY intro
     font-size: 90px;
   }
     .txtTitre {
-    margin: 0 90px;
+    margin: 0 80px;
   }
     .button {
     margin-left:10px;
