@@ -43,7 +43,6 @@ header {
   padding-bottom: 40px;
   padding-top: 40px;
   z-index: -1;
-  width: 15%;
   margin: 0 auto;
 }
 
@@ -390,33 +389,37 @@ footer {
   margin-top: 0px;
   text-align: center;
 }
-
-.container span {
-  margin: 10px 10px 10px 10px;
-  font-size: 22px;
-  color: #b7bfce;
-}
-
-.container p {
-  color: #b7bfce;
-  font-size: 20px;
-  padding-bottom: 20px;
+.footFooter, .footerLink{
+  font-family: 'Big Bimbo NC';
 }
 
 #test {
   padding-top: 20px;
 }
 
-@media screen and (max-width:640px) {
-  .container span {
-    font-size: 10px;
-  }
-  .container p {
-    font-size: 12px;
-  }
-}
-
+@media screen and (min-width:640px) {
 .footerLink {
+  margin: 10px 10px 10px 10px;
+  font-size: 18px;
   color: #ce2076;
 }
 
+.footFooter {
+  color: #04cfdd;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+}
+
+@media screen and (max-width:639px) {
+.footerLink {
+  margin: 10px 10px 10px 10px;
+  font-size: 9px;
+  color: #ce2076;
+}
+
+.footFooter {
+  color: #04cfdd;
+  font-size: 8px;
+  padding-bottom: 20px;
+}

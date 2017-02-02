@@ -634,34 +634,37 @@ footer {
   margin-top: 0px;
   text-align: center;
 }
-  #test {
+.footFooter, .footerLink{
+  font-family: 'Big Bimbo NC';
+}
+
+#test {
   padding-top: 20px;
 }
-@media screen and (min-width:641px) {
+
+@media screen and (min-width:640px) {
 .footerLink {
   margin: 10px 10px 10px 10px;
-  font-size: 22px;
+  font-size: 18px;
   color: #ce2076;
 }
 
-.footFooter{
- font-size: 20px;
-  padding-bottom: 20px; 
+.footFooter {
+  color: #04cfdd;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
 }
 
-
-
-
-@media screen and (max-width:640px) {
+@media screen and (max-width:639px) {
 .footerLink {
   margin: 10px 10px 10px 10px;
-
-  font-size: 10px;
+  font-size: 9px;
   color: #ce2076;
 }
 
-.footFooter{
- font-size: 12px;
-  padding-bottom: 20px; 
-}
+.footFooter {
+  color: #04cfdd;
+  font-size: 8px;
+  padding-bottom: 20px;
 }
