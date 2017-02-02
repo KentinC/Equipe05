@@ -1,0 +1,298 @@
+/***********
+
+  Header 
+
+********/
+
+header {
+  background: white;
+  border-bottom: solid 3px #ce2076;
+}
+
+.logo {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  z-index: -1;
+}
+
+@keyframes checked-anim {
+  25% {
+    width: 300px;
+    height: 370px;
+  }
+  50% {
+    width: 300px;
+    height: 370px;
+  }
+  100% {
+    width: 300px;
+    height: 370px;
+    border-radius: 0;
+  }
+}
+
+@keyframes not-checked-anim {
+  0% {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+#menu li,
+.headerMenu {
+  margin: 75px 0 -55px 30px;
+  color: #ce2076;
+  font: 19px 'TerminalDosis-Medium', sans-serif;
+  font-weight: 700;
+  line-height: 1.8;
+  text-decoration: none;
+  text-transform: none;
+  list-style: none;
+  outline: 0;
+  display: none;
+}
+
+#menu li {
+  width: 230px;
+  text-indent: 56px;
+}
+
+#menu a:hover {
+  color: #8b4513;
+}
+
+#menu a:focus {
+  display: block;
+  color: #8b4513;
+  background-color: #eee;
+  transition: all .5s;
+}
+
+#trigger,
+#burger,
+#burger:before,
+#burger:after {
+  position: absolute;
+  display: inline-block;
+  top: 25px;
+  left: 25px;
+  background: #ce2076;
+  width: 30px;
+  height: 5px;
+  transition: .2s ease;
+  cursor: pointer;
+  z-index: 4;
+}
+
+#trigger {
+  height: 25px;
+  background: none;
+  z-index: 4;
+}
+
+#burger:before {
+  content: " ";
+  top: 10px;
+  left: 0;
+  z-index: 3;
+}
+
+#burger:after {
+  content: " ";
+  top: 20px;
+  left: 0;
+  z-index: 3;
+}
+
+#menu-toggle:checked + #trigger + #burger {
+  top: 35px;
+  transform: rotate(180deg);
+  transition: transform .2s ease;
+}
+
+#menu-toggle:checked + #trigger + #burger:before {
+  width: 20px;
+  top: -2px;
+  left: 18px;
+  transform: rotate(45deg) translateX(-5px);
+  transition: transform .2s ease;
+}
+
+#menu-toggle:checked + #trigger + #burger:after {
+  width: 20px;
+  top: 2px;
+  left: 18px;
+  transform: rotate(-45deg) translateX(-5px);
+  transition: transform .2s ease;
+}
+
+#menu {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-bottom-right-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  animation: not-checked-anim .2s both;
+  transition: .2s;
+  z-index: 2;
+}
+
+#menu-toggle:checked + #trigger + #burger + #menu {
+  animation: checked-anim 1s ease both;
+}
+
+#menu-toggle:checked + #trigger ~ #menu > li,
+.headerMenu {
+  display: block;
+}
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  display: none;
+}
+
+
+/*********
+
+
+BODY
+
+
+*********/
+
+@font-face {
+  font-family: "Vaivai Handwritting Regular Mac";
+  src: url(../Typo/Vaivai%20Handwritting%20Regular%20Mac.ttf);
+}
+
+@font-face {
+  font-family: "Big Bimbo_NC";
+  src: url(../Typo/Big_Bimbo_NC.ttf);
+}
+
+@font-face {
+  font-family: "Dosis-Light";
+  src: url(../Typo/Dosis-Light.ttf);
+}
+
+.titre {
+  font-family: "Big Bimbo_NC";
+  color: #ce2076;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.soustitre {
+  font-size: 60px;
+  text-align: center;
+  font-family: "Vaivai Handwritting Regular Mac";
+}
+
+.image {
+  padding-left: 600px;
+  padding-right: 600px;
+  background-repeat: repeat;
+  background-image: url(../images/fond-pattern-wood.jpg);
+}
+
+.Bouton {
+  background: #ce2076;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  font-family: "Dosis-Light";
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+body {
+  font-family: "Dosis-Light";
+}
+
+h4 {
+  font-family: "Dosis-Light";
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+fieldset {
+  border-top: 2px solid #ce2076;
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+}
+
+@media only screen and (max-width: 640px) {
+  .titre {
+    text-align: left;
+    font-size: 15px;
+    margin-left: 25px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .Bouton {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width:640px) {
+  fieldset {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  fieldset {
+    width: 300px;
+  }
+}
+
+
+/*********
+
+  FOOTER
+
+*********/
+
+footer {
+  background-color: white;
+  height: 100px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.container span {
+  margin: 10px 10px 10px 10px;
+  font-size: 22px;
+  color: #b7bfce;
+}
+
+.container p {
+  color: #b7bfce;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+#test {
+  padding-top: 20px;
+}
+
+@media screen and (max-width:640px) {
+  .container span {
+    font-size: 10px;
+  }
+  .container p {
+    font-size: 12px;
+  }
+}
+
+.footerLink {
+  color: #ce2076;
+}
