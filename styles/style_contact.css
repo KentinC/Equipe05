@@ -204,6 +204,12 @@ BODY
   border-radius: 5px;
 }
 
+.Bouton:hover{
+  background: white;
+  color: #ce2076;
+  transition: all 0.5s linear;
+}
+
 body {
   font-family: "Dosis-Light";
 }
