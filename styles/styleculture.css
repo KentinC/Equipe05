@@ -598,11 +598,9 @@ COMPATIBILITY intro
     font-size: 90px;
   }
   .txtTitre {
-    display:none;
+    font-size:1px;
   }
   .button {
-    display: none;
+    font-size:1px;
   }
-  .imgMain {
-  margin-top:100px;}
 }
