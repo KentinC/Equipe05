@@ -593,7 +593,7 @@ COMPATIBILITY intro
     font-size: 90px;
   }
   .txtTitre {
-    visibility: hidden;
+    display:none;
   }
   .button {
     display: none;
