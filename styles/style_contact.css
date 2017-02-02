@@ -166,7 +166,7 @@ BODY
 
 @font-face {
   font-family: "Vaivai Handwritting Regular Mac";
-  src: url(../Typo/Vaivai%20Handwritting%20Regular%20Mac.ttf);
+  src: url(../styles/fonts/Vaivai%20Handwritting%20Regular%20Mac.ttf);
 }
 
 @font-face {
@@ -194,13 +194,6 @@ BODY
   font-family: "Vaivai Handwritting Regular Mac";
 }
 
-.image {
-  padding-left: 600px;
-  padding-right: 600px;
-  background-repeat: repeat;
-  background-image: url(../images/fond-pattern-wood.jpg);
-}
-
 .Bouton {
   background: #ce2076;
   color: white;
@@ -209,6 +202,7 @@ BODY
   font-family: "Dosis-Light";
   margin-bottom: 25px;
   margin-top: 10px;
+  border-radius: 7px;
 }
 
 body {
