@@ -565,7 +565,7 @@ COMPATIBILITY intro
     margin: 0 80px;
   }
   .button {
-    margin-top: 10px;
+    display:inline;
   }
 }
 
