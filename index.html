@@ -1,324 +1,80 @@
 <!DOCTYPE html>
-<html class="no-js" lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nos produits</title>
-    <link rel="stylesheet" href="styles/foundation.min.css" />
-    <link rel="stylesheet" href="styles/slick.css">
-    <link rel="stylesheet" href="styles/slick-theme.css">
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
-  <body>
+<html lang="fr" class="no-js">
 
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=0" />
+  <link rel="stylesheet" href="styles/foundation.css" />
+  <link rel="stylesheet" href="styles/slick-theme.css" />
+  <link rel="stylesheet" href="styles/slick.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="scripts/vendor/script.js" /> </head>
+<!-- header -->
+<header>
+  <input type="checkbox" id="menu-toggle" />
+  <label id="trigger" for="menu-toggle"></label>
+  <label id="burger" for="menu-toggle"></label>
+  <ul id="menu">
+    <li><a class="headerMenu" href="index.html">Home</a></li>
+    <li><a class="headerMenu" href="pages/culturecoco.html">Culture coco</a></li>
+    <li><a class="headerMenu" href="pages/produits.html">Nos produits</a></li>
+    <li><a class="headerMenu" href="pages/events.html">Evénements</a></li>
+    <li><a class="headerMenu" href="pages/contact.html">Contact</a></li>
+  </ul>
+  <div class="logo">
+    <a href="index.html"><img src="images/logo.png" alt="vaivai" class="vaivai"></a>
+  </div>
+</header>
+<!--slider-->
+<div class="container">
+  <div id="monSlider" class="Slider"> <img src="images/vaivaicocotour.png" alt="vaivaicocotour" class="imageSlide"/>
+  <img src="images/concour.png" alt="jeu concours" class="imageSlide"/> <img src="images/produits.png" alt="produit+createur" class="imageSlide"/> </div>
+  <div class="icone">
+    <a class="bouton" href=#ancre> <img src="images/icon.png" alt="icon"></a>
+  </div>
+  <!--Video-->
+  <div class="video" id="ancre">
+    <div class="logoCoconut"> <img src="images/coconuttour.png" alt="Vaivai coconut tour" /> </div> <img src="images/coconuttour.png" alt="Vaivai coconut tour" class="logoCoconutCache" />
+    <iframe width="800" height="400" src=" 
+https://www.youtube.com/embed/9V8AlAYGJ-c?&autoplay=1" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<!--Categories-->
+<section>
+  <div class="row">
+    <div class="categorie"> <a href="https://www.vaivai.fr/fr/culture-coco/envirronement/" title="Découvrez lesquels ici" class="buttonCategorie small-12 medium-6"> Culture coco</a> <a href="https://www.vaivai.fr/fr/culture-coco/envirronement/" title="Découvrez lesquels ici" class="buttonCategorie small-12 medium-6"> Nos produits</a> <a href="https://www.vaivai.fr/fr/culture-coco/envirronement/" title="Découvrez lesquels ici" class="buttonCategorie small-12 medium-6"> Évenements</a> </div>
+  </div>
+</section>
+<!--jeu concours-->
+<div class="jeuConcours">
+  <h2>Jeu concours</h2>
+  <img src="images/jeuconcours.png" alt="concours" class="imgJeu small-12 medium-12 large-6"/>
+  <span class="txtImgJeu small-12 medium-12 large-6">
+  <h3>Du 17 mai au 12 juillet</h3>
+  <p class="txtPJeu">Tentez de gagner un voyage à l'île de Borneo pour 2 personnes. Pour y participer, postez un selfie sur les réseaux sociaux avec le hashtags</p>
+  <p class="hashtags">#CoconutTour</p>
+  </span>
+</div>
 
-    <!--------------------------------------------
-
-HEADER
-
--------------------------------------------->
-    <header>
-
-      <input type="checkbox" id="menu-toggle"/>
-      <label id="trigger" for="menu-toggle"></label>
-      <label id="burger" for="menu-toggle"></label>
-      <ul id="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Culture coco</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-
-      <div class="logo">
-        <a class="index" href="index.html"><img src="images/logo.png" alt="vaivai" class="vaivai"></a>
-      </div>
-    </header>
-    <!----------------------------------------------
-
-SLIDER
-
------------------------------------------------>
-    <div class="slider">
-      <div class="row monSlider">
-        <div>
-          <img src="images/coco_fraicheur.png" alt= "Eau de coco fraicheur">
-          <div class="informations">
-            <h2 class="vertClair">L'eau de coco fraîcheur</h2>
-            <p>
-              L'eau de coco Vaïvaï Sélection Fraîcheur est 100% pur jus, sans aucun ajout et possède un goût naturellement plus prononcé de coco.
-            </p>
-            <p>
-              Pour en savoir plus, <a class="linkOffi" alt="lien de redirection site achat" href="https://www.vaivai.fr/fr/product/eau-de-coco-selection-fraicheur/">c'est par ici</a>
-            </p>
-          </div>
-        </div>
-        <div>
-          <img src="images/coco_nature.png" alt="eau de coco naturelle">
-          <div class="informations">
-            <h2 class="vertClair">Eau de coco naturelle</h2>
-            <p>L'eau de coco Vaïvaï est 100% naturelle, sans aucun ajout et possède un goût naturellement doux et rafraîchissant.
-            </p>
-            <p>
-              Pour en savoir plus, <a class="linkOffi" alt="lien de redirection site achat" href="https://www.vaivai.fr/fr/product/eau-de-coco-naturelle/">c'est par ici</a>
-            </p>
-          </div>
-        </div> 
-        <div>
-          <img src="images/coco_passion.png" alt="Eau de coco passion">
-          <div class="informations">
-            <h2 class="orange">Eau de coco et fruit de la passion</h2>
-            <p>En associant l'eau de coco au jus de fruit de la passion, Vaivai vous propose une boisson résolument ensoleillée.
-            </p>
-            <p>
-              Pour en savoir plus, <a class="linkOffi" alt="lien de redirection site achat" href="https://www.vaivai.fr/fr/product/eau-de-coco-fruit-de-la-passion/">c'est par ici</a>
-            </p>
-          </div>
-        </div>
-        <div>
-          <img src="images/coco_citron.png" alt="Eau de coco citron-menthe">
-          <div class="informations">
-            <h2 class="bleuClair">Création Coco et Citron-Menthe</h2>
-            <p>Vaïvaï Création Citron vert + menthe et eau de coco, un cocktail aussi festif et exotique que rafraichissant, inspiré du mojito (sans alcool).
-            </p>
-            <p>
-              Pour en savoir plus, <a class="linkOffi" alt="lien de redirection site achat" href="https://www.vaivai.fr/fr/product/creation-citron-vert-menthe-eau-de-coco/">c'est par ici</a>
-            </p>
-          </div>
-        </div>
-        <div>
-          <img src="images/coco_fraise.png" alt="Eau de coco fraise">
-          <div class="informations">
-            <h2 class="bleuClair">Création Coco et Fraise-Citron vert</h2>
-            <p>Vaïvaï Création Fraise + citron vert et eau de coco, un cocktail fruité et frais. Idéal pour une pause plaisir, ou pour vos cocktails de soirées..
-            </p>
-            <p>
-              Pour en savoir plus, <a class="linkOffi" alt="lien de redirection site achat" href="https://www.vaivai.fr/fr/product/creation-fraise-citron-vert-eau-de-coco/">c'est par ici</a>
-            </p>
-          </div>
-        </div>
-        <div>
-          <img src="images/coco_mangue.png" alt="Eau de coco passion">
-          <div class="informations">
-            <h2 class="bleuClair">Création Coco et Mangue</h2>
-            <p>
-              Vaïvaï Création Mangue et eau de coco, un cocktail délicieux et léger à la saveur exceptionnelle de mangue. Idéale pour une pause douceur.
-            </p>
-            <p>
-              Pour en savoir plus, <a class="linkOffi" alt="lien de redirection site achat" href="https://www.vaivai.fr/fr/product/eau-de-coco-mangue/">c'est par ici</a>
-            </p>
-          </div>
-        </div>
-        <div>
-          <img src="images/huile_desodorisee.png" alt="Huile de coco désodorisée">
-          <div class="informations">
-            <h2 class="bleuFonce">Huile de Coco désodorisée et biologique</h2>
-            <p>
-              Une huile de coco biologique, 100% végétale, neutre en goût et sans odeurs, idéale pour la cuisson de vos aliments ou en remplacement du beurre.
-            </p>
-            <p>
-              Pour en savoir plus, <a class="linkOffi" alt="lien de redirection site achat" href="https://www.vaivai.fr/fr/product/huile-de-coco-desodorisee-biologique/">c'est par ici</a>
-            </p>
-          </div>
-        </div><div>
-        <img src="images/huile_naturelle.png" alt="Huile de coco naturelle">
-        <div class="informations">
-          <h2 class="bleuFonce">Huile de Coco naturelle</h2>
-          <p>
-            Une huile de coco vierge, pressée à froid, biologique, 100% végétale, idéale pour la cuisson de vos aliments ou en remplacement du beurre.
-          </p>
-          <p>
-            Pour en savoir plus, <a class="linkOffi" alt="lien de redirection site achat" href="https://www.vaivai.fr/fr/product/huile-de-coco-vierge-et-biologique/">c'est par ici</a>
-          </p>
-        </div>
-        </div><div>
-        <img src="images/petales_coco.png" alt="pétales de coco">
-        <div class="informations">
-          <h2 class="vertFonce">Pétales de Coco</h2>
-          <p>
-            Des pétales de chair de coco, simplement toastés au four, sans aucun ajout de matière grasse, pour un plaisir terriblement croustillant.
-          </p>
-          <p>
-            Pour en savoir plus, <a class="linkOffi" alt="lien de redirection site achat" href="https://www.vaivai.fr/fr/product/petales-de-coco-originale/">c'est par ici</a>
-          </p>
-        </div>
-        </div>
-      </div>
+<!--Footer-->
+<footer>
+  <div id="test">
+    <div class="container">
+    <span> <a class="footerLink" href="index.html">Home</a> </span> <span> <a class="footerLink" href="pages/culturecoco.html">Culture coco</a> </span> <span> <a class="footerLink" href="pages/produits.html">Les produits</a> </span> <span> <a class="footerLink" href="pages/events.html">Evénements</a> </span> <span> <a class="footerLink" href="pages/contact.html">Contact</a> </span> 
     </div>
-
-    <!---------------------------------------------
-
-FIRST LINE
-
------------------------------------------------> 
-
-
-    <div class="center">
-
-
-      <!---------------------------------------------
-
-FIRST LINE
-
------------------------------------------------>
-      <div class="row" data-equalizer="bloc2">
-        <div class="columns large-6 medium-6 small-12 fond_vertClair" data-equalizer-watch="bloc2">
-          <img src="images/eau_nos_produits.png" alt="eau de coco" class="imgHeight">
-        </div>
-        <div class="columns large-6 medium-6 small-12" data-equalizer-watch="bloc2">
-          <div id="bloc1">
-            <h3>Pourquoi l'eau de coco ?</h3>
-            <p>
-              Celle-ci a plusieurs vertus :
-            </p>
-            <p>
-              Elle lutte contre certains troubles tropicaux
-            </p>
-            <p>
-              Elle contient également d’importants nutriments
-            </p>
-            <p>
-              Elle contient des minéraux importants
-            </p>
-            <p>
-              Elle contient des hormones végétales réputées pour lutter contre le vieillissement
-            </p>
-            <p>Elle renforce le système immunitaire
-            </p>
-            <p>
-              Et bien d'autres...
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!---------------------------------------------
-
-SECOND LINE
-
------------------------------------------------>
-
-      <div class="row" data-equalizer="bloc2">
-        <div id="shadow" class="columns large-6 medium-6 small-12" data-equalizer-watch="bloc2">
-          <img src="images/cuisine_nos_produits.png" alt="plat cuisiné"  class="imgHeight">
-        </div>
-        <div class="columns large-6 medium-6 small-12 " data-equalizer-watch="bloc2">
-          <div id="bloc2">
-            <h3> Processus de fabrication</h3>
-            <p>
-              Pour bien exploiter la noix de coco, celle-ci subit plusieurs processus :
-            </p>
-            <p>
-              La récolte des noix de coco
-            </p>
-            <p>
-              Découpe et préparation de la chair de coco
-            </p>
-            <p>
-              Extraction à froid de l’huile de coco
-            </p>
-            <p>
-              Arômatisation et cuisson des pétales de coco
-            </p>
-            <p>
-              Désodorisation à la vapeur d’eau
-            </p>
-          </div>
-        </div>
-        <div class="columns large-6 medium-6 small-12" data-equalizer-watch="bloc2">
-          <img src="images/cuisine_nos_produits.png" alt="plat cuisiné" class="imgHeight" id="move">
-        </div>
-      </div>
-
-
-      <!---------------------------------------------
-
-THIRD LINE
-
------------------------------------------------>
-      <div class="row" data-equalizer="bloc2">
-        <div class="columns large-6 medium-6 small-12" data-equalizer-watch="bloc2" >
-          <img src="images/snack_nos_produits.png" alt="pétales de coco" class="imgHeight">
-        </div>
-        <div class="columns large-6 medium-6 small-12" data-equalizer-watch="bloc2">
-          <div id="bloc3">
-            <h3>De la coco snack ?</h3>
-            <div>
-              <p>
-                En effet, nous avons mis en place un tout nouveau produit qui va ravir vos papilles, les pétales de coco !
-              </p>
-              <p>
-                Quoi de mieux pour une petite fringale, en soirée ou encore au petit déjeuner ?
-              </p>
-              <p>
-                En tout cas, nos coco addicts sont déjà conquis eux.
-              </p>
-            </div>
-            </p>
-        </div>
-      </div>
+  </div>
+  <div id="test2">
+    <div class="container">
+      <p> <a class="footFooter" href="https://www.vaivai.fr/fr/">© 2017 Vaivai SAS</a> | <a class="footFooter" href="https://www.vaivai.fr/fr/conditions-utilisation/">Conditions d'utilisation</a> | <a class="footFooter" href="https://www.vaivai.fr/fr/mentions-legales/">Mentions légales</a> | <a class="footFooter" href="https://www.vaivai.fr/fr/vie-privee/">Vie privée</a> </p>
     </div>
-    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="scripts/vendor/jquery.js"></script>
+<script type="text/javascript" src="scripts/vendor/slick.min.js"></script>
+<script type="text/javascript" src="scripts/vendor/slick.js"></script>
+<script type="text/javascript" src="scripts/vendor/script.js"></script>
+</body>
 
-  <!---------------------------------------------
-
-SCRIPT FOUNDATION & SLICK
-
------------------------------------------------>
-  <script src="scripts/vendor/jquery.js"></script>
-  <script src="scripts/slick.js"></script>
-  <script src="scripts/vendor/what-input.js"></script>
-  <script src="scripts/vendor/foundation.min.js"></script>
-  <script>
-    $(document).foundation();
-
-    $(document).ready(function(){
-      $('.monSlider').slick({
-        autoplay : true,
-        dots : false,
-        arrow : true,
-        slidesToShow : 2,
-        slidesToScroll : 2,
-        pauseOnFocus: true,
-        speed: 300,
-        autoplaySpeed: 1000,
-        responsive: [
-                  {
-                    breakpoint: 640,
-                    settings: {
-                      slidesToShow: 1,
-                      slidesToScroll: 1,
-                      infinite: true,
-                      dots: true
-                  }
-          }]
-      });
-    });
-  </script>
-
-  <!--
-
-FOOTER
-
--->
-
-  <footer>    
-    <div id="test">
-      <div class="container">
-        <span> <a class="footerLink" href="index.html">Home</a> </span>
-        <span> <a class="footerLink" href="">Culture coco</a> </span>
-        <span> <a class="footerLink" href="">Les produits</a> </span>
-        <span> <a class="footerLink" href="">Evénements</a> </span>
-        <span> <a class="footerLink" href="">Contact</a> </span>
-      </div>
-    </div>
-    <div id="test2">
-      <div class="container">
-        <p> 
-          <a class="footFooter" alt="page principale" href="index.html">© 2017 Vaivai SAS</a> | <a class="footFooter" alt="conditions d'utilisation" href="https://www.vaivai.fr/fr/conditions-utilisation/">Conditions d'utilisation</a> | <a class="footFooter" alt="mentions légales" href="https://www.vaivai.fr/fr/mentions-legales/">Mentions légales</a> | <a class="footFooter" alt="vie privée" href="https://www.vaivai.fr/fr/vie-privee/">Vie privée</a>
-        </p>
-      </div>
-    </div>
-  </footer>
-  </body>
 </html>
