@@ -289,6 +289,31 @@ Intro
   font-family: 'TerminalDosis-Medium', sans-serif;
 }
 
+  .button {
+  display: inline-block;
+  width: 190px;
+  height: 30px;
+  margin-top: 70px;
+  padding: 15px 0;
+  color: #ce2076;
+  font-size: 14px;
+  font-family: MontSerrat, sans-serif;
+  background: white;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+    margin-left:10px;
+}
+
+.button:hover {
+  background: white;
+  width: 200px;
+  height: 40px;
+  color: #ce2076;
+  font-size: 16px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
 
 /*************
 
@@ -393,30 +418,6 @@ div,
     height: 230px;
     padding: 20px 30px;
   }
-  .button {
-  display: inline-block;
-  width: 190px;
-  height: 30px;
-  margin-top: 70px;
-  padding: 15px 0;
-  color: #ce2076;
-  font-size: 14px;
-  font-family: MontSerrat, sans-serif;
-  background: white;
-  text-decoration: none;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.button:hover {
-  background: white;
-  width: 200px;
-  height: 40px;
-  color: #ce2076;
-  font-size: 16px;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
 }
 
 @media only screen and (max-width: 600px) {
