@@ -22,6 +22,10 @@
 body {
   font-family: sans-serif;
 }
+a.button {
+  margin:0;
+  padding:0;
+}
 
 
 /***********
@@ -267,19 +271,12 @@ RESEAUX SOCIAUX
 
 /*************
 
-Intro
+    Intro
 
 **************/
 
-.imageintro {
-  position: relative;
-  width: 100%;
-}
-
 .intro {
   text-align: center;
-  position: absolute;
-  z-index: 1;
 }
 
 .titre {
@@ -322,7 +319,7 @@ Intro
 
 /*************
 
-Main
+      Main
 
 **************/
 
@@ -460,7 +457,6 @@ div,
   }
 }
 
-
 /********************
 
 footer
@@ -472,39 +468,41 @@ footer {
   margin-top: 0px;
   text-align: center;
 }
+  #test {
+  padding-top: 20px;
+}
+
+.footerLink{
+  color: #ce2076;
+}
+
 .footFooter, .footerLink{
   font-family: 'Big Bimbo NC';
 }
 
-#test {
-  padding-top: 20px;
-}
-
-@media screen and (min-width:640px) {
+@media screen and (min-width:641px) {
 .footerLink {
-  margin: 10px 10px 10px 10px;
   font-size: 18px;
-  color: #ce2076;
 }
 
-.footFooter {
-  color: #04cfdd;
-  font-size: 20px;
-  padding-bottom: 20px;
-}
+.footFooter{
+ font-size: 20px;
+  padding-bottom: 20px; 
 }
 
-@media screen and (max-width:639px) {
+
+
+
+@media screen and (max-width:640px) {
 .footerLink {
-  margin: 10px 10px 10px 10px;
-  font-size: 9px;
+  font-size: 8px;
   color: #ce2076;
 }
 
-.footFooter {
-  color: #04cfdd;
-  font-size: 8px;
-  padding-bottom: 20px;
+.footFooter{
+ font-size: 10px;
+  padding-bottom: 20px; 
+}
 }
 
 /********************
@@ -535,21 +533,14 @@ COMPATIBILITY intro
     margin: 0 100px;
     padding: 0;
   }
-  .button {
-    display: none;
-  }
 }
 
 @media screen and (min-width:680px) and (max-width:849px) {
   .intro {
     padding: 40px 10px;
   }
-  .titre {}
   .txtTitre {
     margin: 0 100px;
-  }
-  .button {
-    display: none;
   }
 }
 
@@ -557,12 +548,8 @@ COMPATIBILITY intro
   .intro {
     padding: 40px 2px;
   }
-  .titre {}
   .txtTitre {
-    margin: 0 100px;
-  }
-  .button {
-    display: none;
+    margin: 0 80px;
   }
 }
 
@@ -574,11 +561,11 @@ COMPATIBILITY intro
     text-align: center;
     display: inline-block;
   }
-  .txtTitre {
-    visibility: hidden;
+    .txtTitre {
+    margin: 0 80px;
   }
   .button {
-    display: none;
+    margin-top: 10px;
   }
 }
 
@@ -590,10 +577,10 @@ COMPATIBILITY intro
     text-align: center;
     font-size: 90px;
   }
-  .txtTitre {
-    visibility: hidden;
+    .txtTitre {
+    margin: 0 80px;
   }
   .button {
-    display: none;
+    margin-top:10px
   }
 }
