@@ -271,10 +271,6 @@ Intro
 
 **************/
 
-.imageintro {
-  height:40px;
-}
-
 .intro {
   text-align: center;
   position: relative;
@@ -542,34 +538,24 @@ COMPATIBILITY intro
     margin: 0 100px;
     padding: 0;
   }
-  .button {
-    display: none;
-  }
 }
 
 @media screen and (min-width:680px) and (max-width:849px) {
   .intro {
     padding: 40px 10px;
   }
-  .titre {}
   .txtTitre {
     margin: 0 100px;
   }
-  .button {
-    display: none;
-  }
+
 }
 
 @media screen and (min-width:640px) and (max-width:679px) {
   .intro {
     padding: 40px 2px;
   }
-  .titre {}
   .txtTitre {
     margin: 0 100px;
-  }
-  .button {
-    display: none;
   }
 }
 
@@ -581,12 +567,7 @@ COMPATIBILITY intro
     text-align: center;
     display: inline-block;
   }
-  .txtTitre {
-    visibility: hidden;
-  }
-  .button {
-    display: none;
-  }
+
 }
 
 @media screen and (min-width:300px) and (max-width: 499px) {
@@ -597,10 +578,11 @@ COMPATIBILITY intro
     text-align: center;
     font-size: 90px;
   }
-  .txtTitre {
-    font-size:1px;
+    .txtTitre {
+    margin: 0 90px;
   }
-  .button {
-    font-size:1px;
+    .button {
+    margin-left:10px;
   }
+
 }
