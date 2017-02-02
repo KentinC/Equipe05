@@ -176,18 +176,6 @@ header {
 }
 
 
-/*********
-
-  a
-
-*********/
-
-a {
-  margin: 0;
-  padding: 0;
-}
-
-
 /***********
 
 RESEAUX SOCIAUX
@@ -646,32 +634,34 @@ footer {
   margin-top: 0px;
   text-align: center;
 }
-
-.container span {
-  margin: 10px 10px 10px 10px;
-  font-size: 22px;
-  color: #b7bfce;
-}
-
-.container p {
-  color: #b7bfce;
-  font-size: 20px;
-  padding-bottom: 20px;
-}
-
-#test {
+  #test {
   padding-top: 20px;
 }
-
-@media screen and (max-width:640px) {
-  .container span {
-    font-size: 10px;
-  }
-  .container p {
-    font-size: 12px;
-  }
+@media screen and (min-width:641px) {
+.footerLink {
+  margin: 10px 10px 10px 10px;
+  font-size: 22px;
+  color: #ce2076;
 }
 
+.footFooter{
+ font-size: 20px;
+  padding-bottom: 20px; 
+}
+
+
+
+
+@media screen and (max-width:640px) {
 .footerLink {
+  margin: 10px 10px 10px 10px;
+
+  font-size: 10px;
   color: #ce2076;
+}
+
+.footFooter{
+ font-size: 12px;
+  padding-bottom: 20px; 
+}
 }

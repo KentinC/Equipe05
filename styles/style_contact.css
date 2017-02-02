@@ -1,6 +1,22 @@
+@font-face {
+  font-family: 'Vaivai Handwritting Regular Mac';
+  src: url('../polices/Vaivai%20Handwritting%20Regular%20Mac.ttf');
+}
+
+@font-face {
+  font-family: 'Big Bimbo NC';
+  src: url('../polices/Big Bimbo NC.ttf');
+}
+
+@font-face {
+  font-family: 'TerminalDosis-Medium';
+  src: url('../polices/TerminalDosis-Medium.ttf');
+}
+
+
 /***********
 
-  Header 
+Header 
 
 ********/
 
@@ -16,6 +32,22 @@ header {
   z-index: -1;
 }
 
+@-webkit-keyframes checked-anim {
+  25% {
+    width: 300px;
+    height: 370px;
+  }
+  50% {
+    width: 300px;
+    height: 370px;
+  }
+  100% {
+    width: 300px;
+    height: 370px;
+    border-radius: 0;
+  }
+}
+
 @keyframes checked-anim {
   25% {
     width: 300px;
@@ -29,6 +61,13 @@ header {
     width: 300px;
     height: 370px;
     border-radius: 0;
+  }
+}
+
+@-webkit-keyframes not-checked-anim {
+  0% {
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -66,6 +105,7 @@ header {
   display: block;
   color: #8b4513;
   background-color: #eee;
+  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -80,6 +120,7 @@ header {
   background: #ce2076;
   width: 30px;
   height: 5px;
+  -webkit-transition: .2s ease;
   transition: .2s ease;
   cursor: pointer;
   z-index: 4;
@@ -107,24 +148,36 @@ header {
 
 #menu-toggle:checked + #trigger + #burger {
   top: 35px;
+  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
+  -webkit-transition: -webkit-transform .2s ease;
+  transition: -webkit-transform .2s ease;
   transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease;
 }
 
 #menu-toggle:checked + #trigger + #burger:before {
   width: 20px;
   top: -2px;
   left: 18px;
+  -webkit-transform: rotate(45deg) translateX(-5px);
   transform: rotate(45deg) translateX(-5px);
+  -webkit-transition: -webkit-transform .2s ease;
+  transition: -webkit-transform .2s ease;
   transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease;
 }
 
 #menu-toggle:checked + #trigger + #burger:after {
   width: 20px;
   top: 2px;
   left: 18px;
+  -webkit-transform: rotate(-45deg) translateX(-5px);
   transform: rotate(-45deg) translateX(-5px);
+  -webkit-transition: -webkit-transform .2s ease;
+  transition: -webkit-transform .2s ease;
   transition: transform .2s ease;
+  transition: transform .2s ease, -webkit-transform .2s ease;
 }
 
 #menu {
@@ -136,12 +189,15 @@ header {
   background-color: #fff;
   border-bottom-right-radius: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  -webkit-animation: not-checked-anim .2s both;
   animation: not-checked-anim .2s both;
+  -webkit-transition: .2s;
   transition: .2s;
   z-index: 2;
 }
 
 #menu-toggle:checked + #trigger + #burger + #menu {
+  -webkit-animation: checked-anim 1s ease both;
   animation: checked-anim 1s ease both;
 }
 
@@ -156,6 +212,49 @@ header {
 }
 
 
+/*****
+
+RESEAUX SOCIAUX
+
+*****/
+
+.social {
+  position: fixed;
+  z-index: 50;
+  width: 40px;
+}
+
+#facebook {
+  right: 5px;
+  bottom: 5px;
+}
+
+#pinterest {
+  right: 55px;
+  bottom: 5px;
+}
+
+#linkedIn {
+  right: 110px;
+  bottom: 5px;
+}
+
+#twitter {
+  right: 165px;
+  bottom: 5px;
+}
+
+#instagram {
+  right: 220px;
+  bottom: 5px;
+}
+
+#youtube {
+  right: 275px;
+  bottom: 5px;
+}
+
+
 /*********
 
 
@@ -164,21 +263,9 @@ BODY
 
 *********/
 
-@font-face {
-  font-family: "Vaivai Handwritting Regular Mac";
-  src: url(../styles/fonts/Vaivai%20Handwritting%20Regular%20Mac.ttf);
+.formulaire{
+  font-family: 'TerminalDosis-Medium';
 }
-
-@font-face {
-  font-family: "Big Bimbo_NC";
-  src: url(../Typo/Big_Bimbo_NC.ttf);
-}
-
-@font-face {
-  font-family: "Dosis-Light";
-  src: url(../Typo/Dosis-Light.ttf);
-}
-
 .titre {
   font-family: "Big Bimbo_NC";
   color: #ce2076;
@@ -204,14 +291,15 @@ BODY
   border-radius: 5px;
 }
 
-.Bouton:hover{
+.Bouton:hover {
   background: white;
   color: #ce2076;
+  -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
 
 body {
-  font-family: "Dosis-Light";
+font-family:'';
 }
 
 h4 {
@@ -228,32 +316,32 @@ fieldset {
   width: 600px;
 }
 
-textarea{
+textarea {
   border: 1px solid whitegrey;
   border-radius: 5px;
 }
 
-select{
-  border: 1px solid  whitegrey;
+select {
+  border: 1px solid whitegrey;
   border-radius: 5px;
 }
 
-#Nom{
-  border: 1px solid  whitegrey;
+#Nom {
+  border: 1px solid whitegrey;
   border-radius: 5px;
 }
 
-textarea:hover{
+textarea:hover {
   border: 1px solid #ce2076;
   border-radius: 5px;
 }
 
-select:hover{
-  border: 1px solid #ce2076 ;
+select:hover {
+  border: 1px solid #ce2076;
   border-radius: 5px;
 }
 
-#Nom:hover{
+#Nom:hover {
   border: 1px solid #ce2076;
   border-radius: 5px;
 }
@@ -287,42 +375,49 @@ select:hover{
 
 /*********
 
-  FOOTER
+FOOTER
 
 *********/
 
 footer {
   background-color: white;
-  height: 100px;
+  height: 140px;
   margin-top: 0px;
   text-align: center;
 }
-
-.container span {
-  margin: 10px 10px 10px 10px;
-  font-size: 22px;
-  color: #b7bfce;
-}
-
-.container p {
-  color: #b7bfce;
-  font-size: 20px;
-  padding-bottom: 20px;
-}
-
-#test {
+  #test {
   padding-top: 20px;
 }
 
-@media screen and (max-width:640px) {
-  .container span {
-    font-size: 10px;
-  }
-  .container p {
-    font-size: 12px;
-  }
+.footerLink{
+  color: #ce2076;
 }
 
+.footFooter, .footerLink{
+  font-family: 'Big Bimbo NC';
+}
+
+@media screen and (min-width:641px) {
 .footerLink {
+  font-size: 18px;
+}
+
+.footFooter{
+ font-size: 20px;
+  padding-bottom: 20px; 
+}
+
+
+
+
+@media screen and (max-width:640px) {
+.footerLink {
+  font-size: 8px;
   color: #ce2076;
+}
+
+.footFooter{
+ font-size: 10px;
+  padding-bottom: 20px; 
+}
 }
