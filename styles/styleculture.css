@@ -443,6 +443,9 @@ div,
     height: 230px;
     padding: 20px 30px;
   }
+  .button {
+    z-index:-10; 
+  }
 }
 
 @media only screen and (max-width: 495px) {
@@ -457,6 +460,9 @@ div,
   .txtMainThree {
     height: 270px;
     padding: 10px 30px;
+  }
+    .button {
+    z-index:-10; 
   }
 }
 
