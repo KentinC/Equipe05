@@ -267,15 +267,12 @@ RESEAUX SOCIAUX
 
 /*************
 
-Intro
+    Intro
 
 **************/
 
 .intro {
   text-align: center;
-  z-index: 1;
-  margin:0;
-  padding:0;
 }
 
 .titre {
@@ -290,7 +287,7 @@ Intro
   font-family: 'TerminalDosis-Medium', sans-serif;
 }
 
-  .button {
+.button {
   display: inline-block;
   width: 190px;
   height: 30px;
@@ -303,7 +300,6 @@ Intro
   text-decoration: none;
   -webkit-transition: .5s;
   transition: .5s;
-    margin-left:10px;
 }
 
 .button:hover {
@@ -316,9 +312,10 @@ Intro
   transition: .5s;
 }
 
+
 /*************
 
-Main
+      Main
 
 **************/
 
@@ -330,7 +327,6 @@ Main
   max-width: 1000px;
   margin: 0 auto;
   padding: 30px;
-  margin-top:300px;
 }
 
 h2 {
@@ -440,9 +436,6 @@ div,
     height: 230px;
     padding: 20px 30px;
   }
-  .button {
-    z-index:-10; 
-  }
 }
 
 @media only screen and (max-width: 495px) {
@@ -459,7 +452,6 @@ div,
     padding: 10px 30px;
   }
 }
-
 
 /********************
 
@@ -519,6 +511,7 @@ COMPATIBILITY intro
   .intro {
     padding: 100px 100px;
   }
+  .titre {}
   .txtTitre {
     margin: 0 200px;
   }
@@ -545,7 +538,6 @@ COMPATIBILITY intro
   .txtTitre {
     margin: 0 100px;
   }
-
 }
 
 @media screen and (min-width:640px) and (max-width:679px) {
@@ -553,7 +545,7 @@ COMPATIBILITY intro
     padding: 40px 2px;
   }
   .txtTitre {
-    margin: 0 100px;
+    margin: 0 80px;
   }
 }
 
@@ -565,10 +557,9 @@ COMPATIBILITY intro
     text-align: center;
     display: inline-block;
   }
-      .txtTitre {
+    .txtTitre {
     margin: 0 80px;
   }
-
 }
 
 @media screen and (min-width:300px) and (max-width: 499px) {
@@ -582,8 +573,4 @@ COMPATIBILITY intro
     .txtTitre {
     margin: 0 80px;
   }
-    .button {
-    margin-left:10px;
-  }
-
 }
