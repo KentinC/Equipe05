@@ -603,4 +603,6 @@ COMPATIBILITY intro
   .button {
     display: none;
   }
+  .imgMain {
+  margin-top:100px;}
 }
