@@ -272,13 +272,13 @@ Intro
 **************/
 
 .imageintro {
- position:relative;
+ position:absolute;
   width: 100%;
 }
 
 .intro {
   text-align: center;
-  position: absolute;
+  position: relative;
   z-index: 1;
 }
 
