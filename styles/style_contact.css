@@ -185,7 +185,6 @@ BODY
   font-size: 20px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 15px;
 }
 
 .soustitre {
@@ -202,7 +201,7 @@ BODY
   font-family: "Dosis-Light";
   margin-bottom: 25px;
   margin-top: 10px;
-  border-radius: 7px;
+  border-radius: 5px;
 }
 
 body {
@@ -213,6 +212,7 @@ h4 {
   font-family: "Dosis-Light";
   text-decoration: underline;
   margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 fieldset {
@@ -220,6 +220,21 @@ fieldset {
   display: block;
   margin: 0 auto;
   width: 600px;
+}
+
+textarea{
+  border: 1px solid  #ce2076;
+  border-radius: 5px;
+}
+
+select{
+  border: 1px solid  #ce2076;
+  border-radius: 5px;
+}
+
+#Nom{
+  border: 1px solid  #ce2076;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 640px) {
