@@ -1,4 +1,4 @@
-  @font-face {
+@font-face {
   font-family: 'TerminalDosis-Medium';
   src: url('../styles/fonts/TerminalDosis-Medium.ttf');
 }
@@ -200,9 +200,7 @@ header {
   background-color: #fff;
   border-bottom-right-radius: 100%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  
   -webkit-animation: not-checked-anim .2s both;
-  
   animation: not-checked-anim .2s both;
   -webkit-transition: .2s;
   transition: .2s;
@@ -288,10 +286,10 @@ h2 {
 }
 
 #texteTopSection {
-position:absolute;
-margin-top: 150px;
-margin-left: 10%;
-margin-right: 10%;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #texteTopSection > p {
@@ -314,6 +312,8 @@ margin-right: 10%;
   text-align: center;
   border-radius: 6px;
   border-style: solid 1px;
+  height: 70%;
+  width: 80%;
 }
 
 lightSpeedIn-webKit-animation-duration {
@@ -327,98 +327,103 @@ lightSpeedIn-webKit-animation-duration {
 }
 
 .vaivan {
-  position:relative;
+  position: relative;
   width: 234px;
   display: block;
   margin: 0 auto;
 }
 
 @media screen and (min-width:1000px) {
-.texteTitre{
-  font-size: 20px;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  margin-top: 0;
-  line-height: 24px;
-}
-  h1{
+  .texteTitre {
+    font-size: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 24px;
+  }
+  h1 {
     font-size: 40px;
   }
-  h2{
+  h2 {
     font-size: 30px;
   }
 }
+
 @media screen and (min-width:1000px) {
-.texteTitre{
-  font-size: 16px;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  margin-top: 0;
-  line-height: 20px;
-}
-  h1{
+  .texteTitre {
+    font-size: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 20px;
+  }
+  h1 {
     font-size: 35px;
   }
-  h2{
+  h2 {
     font-size: 30px;
   }
 }
+
 @media screen and (min-width:754px) and (max-width:999px) {
-  .texteTitre{
-  font-size: 12px;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  margin-top: 0;
-  line-height: 16px;
-}
-   h1{
+  .texteTitre {
+    font-size: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 16px;
+  }
+  h1 {
     font-size: 25px;
   }
-  h2{
-   font-size: 20px;
-  }
-}
-  @media screen and (min-width:590px) and (max-width:753px) {
-  .texteTitre{
-  font-size: 9px;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  margin-top: 0;
-  line-height: 13px;
-}
-    #texteTopSection {
-      margin-top: 110px;
-    }
-     h1{
+  h2 {
     font-size: 20px;
   }
-  h2{
-  font-size: 15px;
+}
+
+@media screen and (min-width:590px) and (max-width:753px) {
+  .texteTitre {
+    font-size: 9px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 13px;
   }
-}
-@media screen and (max-width:589px) {
-  .texteTitre{
-  font-size: 7px;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  margin-top: 0;
-  line-height: 11px;
-}
-     h1{
+  #texteTopSection {
+    margin-top: 110px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
     font-size: 15px;
   }
-  h2{
-  font-size: 10px;
-  }
-   #texteTopSection {
-      margin-top: 110px;
-    }
 }
+
+@media screen and (max-width:589px) {
+  .texteTitre {
+    font-size: 7px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 11px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 10px;
+  }
+  #texteTopSection {
+    margin-top: 110px;
+  }
+}
+
 
 /**************************$
 tableau
@@ -477,7 +482,9 @@ footer {
   margin-top: 0px;
   text-align: center;
 }
-.footFooter, .footerLink{
+
+.footFooter,
+.footerLink {
   font-family: 'Big Bimbo NC';
 }
 

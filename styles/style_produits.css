@@ -1,4 +1,4 @@
-  @font-face {
+@font-face {
   font-family: 'Vaivai Handwritting Regular Mac';
   src: url('../polices/Vaivai%20Handwritting%20Regular%20Mac.ttf');
 }
@@ -635,7 +635,9 @@ footer {
   margin-top: 0px;
   text-align: center;
 }
-.footFooter, .footerLink{
+
+.footFooter,
+.footerLink {
   font-family: 'Big Bimbo NC';
 }
 

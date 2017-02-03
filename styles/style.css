@@ -1,4 +1,4 @@
-  @font-face {
+@font-face {
   font-family: 'vaivai';
   src: url('../styles/fonts/Vaivai Handwritting Regular Mac.ttf');
 }
@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family:'Big Bimbo NC', sans-serif;
+  font-family: 'Big Bimbo NC', sans-serif;
 }
 
 
@@ -326,6 +326,8 @@ object {
 
 iframe {
   margin-top: -100px;
+  height: 70%;
+  width: 80%;
 }
 
 .logoCoconut {
@@ -463,7 +465,9 @@ footer {
   margin-top: 0px;
   text-align: center;
 }
-.footFooter, .footerLink{
+
+.footFooter,
+.footerLink {
   font-family: 'Big Bimbo NC';
 }
 
@@ -483,69 +487,74 @@ footer {
   padding-bottom: 60px;
 }
 
-  /*********
 
-  compatibility
+/*********
 
-  ********/
-  @media screen and (min-width:1070px) {
-    .imgJeu {
-      width: 400px;
-      margin-top: -190px;
-    }
+compatibility
+
+********/
+
+@media screen and (min-width:1070px) {
+  .imgJeu {
+    width: 400px;
+    margin-top: -190px;
   }
-  @media screen and (min-width:900px) and (max-width:1069px) {
-    .logoCoconut {
-      position: relative;
-      z-index: 3;
-      margin-top: -60px;
-      margin-left: -340px;
-      max-width: 100%;
-    }
-    .buttonCategorie:hover {
-      height: 100px;
-      padding: 35px 0;
-    }
-    .imgJeu {
-      max-width: 90%;
-      margin: 0;
-    }
+}
+
+@media screen and (min-width:900px) and (max-width:1069px) {
+  .logoCoconut {
+    position: relative;
+    z-index: 3;
+    margin-top: -60px;
+    margin-left: -340px;
+    max-width: 100%;
   }
-  @media screen and (min-width:300px) and (max-width:899px) {
-    .bouton img {
-      display: none;
-    }
-    .logoCoconut {
-      display: none;
-    }
-    .logoCoconutCache {
-      display: inline;
-      width: 190px;
-    }
-    .video {
-      background-image: url(../images/fond-production_SingleProductPage.png);
-      position: relative;
-      margin-top: 140px;
-      max-width: 100%;
-    }
-    iframe {
-      margin-top: 10px;
-    }
-    .buttonCategorie:hover {
-      height: 100px;
-      padding: 35px 0;
-    }
-    .imgJeu {
-      max-width: 90%;
-      margin: 0;
-    }
+  .buttonCategorie:hover {
+    height: 100px;
+    padding: 35px 0;
   }
-  @media screen and (min-width:300px) and (max-width:450px) {
-    .row {
-      height: 360px;
-    }
-    .imgJeu {
-      max-width: 90%;
-      margin: 0;
-    }
+  .imgJeu {
+    max-width: 90%;
+    margin: 0;
   }
+}
+
+@media screen and (min-width:300px) and (max-width:899px) {
+  .bouton img {
+    display: none;
+  }
+  .logoCoconut {
+    display: none;
+  }
+  .logoCoconutCache {
+    display: inline;
+    width: 190px;
+  }
+  .video {
+    background-image: url(../images/fond-production_SingleProductPage.png);
+    position: relative;
+    margin-top: 140px;
+    max-width: 100%;
+  }
+  iframe {
+    margin-top: 10px;
+  }
+  .buttonCategorie:hover {
+    height: 100px;
+    padding: 35px 0;
+  }
+  .imgJeu {
+    max-width: 90%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width:300px) and (max-width:450px) {
+  .row {
+    height: 360px;
+  }
+  .imgJeu {
+    max-width: 90%;
+    margin: 0;
+  }
+}
