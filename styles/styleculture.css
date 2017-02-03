@@ -376,7 +376,7 @@ div,
   padding: 15px 0;
   color: #ce2076;
   font-size: 14px;
-  font-family: MontSerrat, sans-serif;
+  font-family: 'MontSerrat', sans-serif;
   background: white;
   text-decoration: none;
   -webkit-transition: .5s;
@@ -469,41 +469,24 @@ footer {
   margin-top: 0px;
   text-align: center;
 }
-  #test {
-  padding-top: 20px;
-}
-
-.footerLink{
-  color: #ce2076;
-}
-
 .footFooter, .footerLink{
   font-family: 'Big Bimbo NC';
 }
 
-@media screen and (min-width:641px) {
-.footerLink {
-  font-size: 18px;
+#test {
+  padding-top: 20px;
 }
 
-.footFooter{
- font-size: 20px;
-  padding-bottom: 20px; 
-}
-
-
-
-
-@media screen and (max-width:640px) {
 .footerLink {
-  font-size: 8px;
+  margin: 10px 10px 10px 10px;
+  font-size: 95%;
   color: #ce2076;
 }
 
-.footFooter{
- font-size: 10px;
-  padding-bottom: 20px; 
-}
+.footFooter {
+  color: #04cfdd;
+  font-size: 100%;
+  padding-bottom: 60px;
 }
 
 /********************
@@ -570,7 +553,7 @@ COMPATIBILITY intro
   }
 }
 
-@media screen and (min-width:300px) and (max-width: 499px) {
+@media screen and (max-width: 499px) {
   .intro {
     padding: 40px 30px;
   }
