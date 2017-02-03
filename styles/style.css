@@ -1,4 +1,4 @@
-@font-face {
+  @font-face {
   font-family: 'vaivai';
   src: url('../styles/fonts/Vaivai Handwritting Regular Mac.ttf');
 }
@@ -25,7 +25,7 @@ body {
 
 /***********
 
-  Header 
+Header 
 
 ********/
 
@@ -229,7 +229,7 @@ RESEAUX SOCIAUX
 
 .social {
   position: fixed;
-  z-index:50;
+  z-index: 50;
   width: 40px;
 }
 
@@ -393,49 +393,49 @@ Categories
   transition: .5s;
 }
 
+
 /***********
 
-  jeu concours
+jeu concours
 
 ********/
-.jeuConcours {
-  text-align:center;
-  margin-top:20px;
-  padding-bottom:60px;
-  position:relative;
-  background-image: url(../images/fond-production_SingleProductPage.jpg);
-  margin:0 auto;
 
+.jeuConcours {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 60px;
+  position: relative;
+  background-image: url(../images/fond-production_SingleProductPage.jpg);
+  margin: 0 auto;
 }
 
-
-
 .txtImgJeu {
-  padding-left:50px;
-  padding-right:50px;
- display:inline-block;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: inline-block;
 }
 
 h2 {
-  font-family:'Big Bimbo NC';
-  font-size:50px;
-  padding-top:90px;
-  padding-bottom:20px;
+  font-family: 'Big Bimbo NC';
+  font-size: 50px;
+  padding-top: 90px;
+  padding-bottom: 20px;
 }
 
 h3 {
-  font-size:35px;
-  color:#ce2076;
-  font-family:'Big Bimbo NC';
-  padding-top:50px;
+  font-size: 35px;
+  color: #ce2076;
+  font-family: 'Big Bimbo NC';
+  padding-top: 50px;
 }
 
 .txtPJeu {
-  font-family:'TerminalDosis-Medium';
-  font-size:25px;
+  font-family: 'TerminalDosis-Medium';
+  font-size: 25px;
 }
+
 .hashtags {
-  display:inline-block;
+  display: inline-block;
   width: 190px;
   height: 50px;
   margin-top: 7px;
@@ -450,9 +450,10 @@ h3 {
   transition: .5s;
 }
 
+
 /*********
 
-  FOOTER
+FOOTER
 
 ********/
 
@@ -470,102 +471,81 @@ footer {
   padding-top: 20px;
 }
 
-@media screen and (min-width:640px) {
 .footerLink {
   margin: 10px 10px 10px 10px;
-  font-size: 18px;
+  font-size: 95%;
   color: #ce2076;
 }
 
 .footFooter {
   color: #04cfdd;
-  font-size: 20px;
-  padding-bottom: 20px;
-}
-}
-
-@media screen and (max-width:639px) {
-.footerLink {
-  margin: 10px 10px 10px 10px;
-  font-size: 9px;
-  color: #ce2076;
+  font-size: 100%;
+  padding-bottom: 60px;
 }
 
-.footFooter {
-  color: #04cfdd;
-  font-size: 8px;
-  padding-bottom: 20px;
-}
-
-/*********
+  /*********
 
   compatibility
 
-********/
-
-@media screen and (min-width:1070px) {
-  .imgJeu {
-  width:400px;
-  margin-top:-190px;
-}
-}
-
-@media screen and (min-width:900px) and (max-width:1069px) {
-  .logoCoconut {
-    position: relative;
-    z-index: 3;
-    margin-top: -60px;
-    margin-left: -340px;
-    max-width: 100%;
-  }
-  .buttonCategorie:hover {
-    height: 100px;
-    padding: 35px 0;
-  }
-  .imgJeu {
-  max-width:90%;
-    margin:0;
-}
-}
-
-@media screen and (min-width:300px) and (max-width:899px) {
-  .bouton img {
-    display: none;
-  }
-  .logoCoconut {
-    display: none;
-  }
-  .logoCoconutCache {
-    display: inline;
-    width: 190px;
-  }
-  .video {
-    background-image: url(../images/fond-production_SingleProductPage.png);
-    position: relative;
-    margin-top: 140px;
-    max-width: 100%;
-  }
-  iframe {
-    margin-top: 10px;
-  }
-  .buttonCategorie:hover {
-    height: 100px;
-    padding: 35px 0;
-  }
+  ********/
+  @media screen and (min-width:1070px) {
     .imgJeu {
-  max-width:90%;
-      margin:0;
-  
-}
-}
-
-@media screen and (min-width:300px) and (max-width:450px) {
-  .row {
-    height: 360px;
+      width: 400px;
+      margin-top: -190px;
+    }
   }
+  @media screen and (min-width:900px) and (max-width:1069px) {
+    .logoCoconut {
+      position: relative;
+      z-index: 3;
+      margin-top: -60px;
+      margin-left: -340px;
+      max-width: 100%;
+    }
+    .buttonCategorie:hover {
+      height: 100px;
+      padding: 35px 0;
+    }
     .imgJeu {
-  max-width:90%;
-      margin:0;
-  
-}
-}
+      max-width: 90%;
+      margin: 0;
+    }
+  }
+  @media screen and (min-width:300px) and (max-width:899px) {
+    .bouton img {
+      display: none;
+    }
+    .logoCoconut {
+      display: none;
+    }
+    .logoCoconutCache {
+      display: inline;
+      width: 190px;
+    }
+    .video {
+      background-image: url(../images/fond-production_SingleProductPage.png);
+      position: relative;
+      margin-top: 140px;
+      max-width: 100%;
+    }
+    iframe {
+      margin-top: 10px;
+    }
+    .buttonCategorie:hover {
+      height: 100px;
+      padding: 35px 0;
+    }
+    .imgJeu {
+      max-width: 90%;
+      margin: 0;
+    }
+  }
+  @media screen and (min-width:300px) and (max-width:450px) {
+    .row {
+      height: 360px;
+    }
+    .imgJeu {
+      max-width: 90%;
+      margin: 0;
+    }
+  }

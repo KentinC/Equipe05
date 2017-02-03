@@ -1,4 +1,4 @@
-@font-face {
+  @font-face {
   font-family: 'Vaivai Handwritting Regular Mac';
   src: url('../polices/Vaivai%20Handwritting%20Regular%20Mac.ttf');
 }
@@ -263,9 +263,10 @@ BODY
 
 *********/
 
-.formulaire{
+.formulaire {
   font-family: 'TerminalDosis-Medium';
 }
+
 .titre {
   font-family: "Big Bimbo_NC";
   color: #ce2076;
@@ -299,7 +300,7 @@ BODY
 }
 
 body {
-font-family:'';
+  font-family: '';
 }
 
 h4 {
@@ -385,7 +386,9 @@ footer {
   margin-top: 0px;
   text-align: center;
 }
-.footFooter, .footerLink{
+
+.footFooter,
+.footerLink {
   font-family: 'Big Bimbo NC';
 }
 
@@ -394,28 +397,26 @@ footer {
 }
 
 @media screen and (min-width:640px) {
-.footerLink {
-  margin: 10px 10px 10px 10px;
-  font-size: 18px;
-  color: #ce2076;
-}
-
-.footFooter {
-  color: #04cfdd;
-  font-size: 20px;
-  padding-bottom: 20px;
-}
+  .footerLink {
+    margin: 10px 10px 10px 10px;
+    font-size: 18px;
+    color: #ce2076;
+  }
+  .footFooter {
+    color: #04cfdd;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 @media screen and (max-width:639px) {
-.footerLink {
-  margin: 10px 10px 10px 10px;
-  font-size: 9px;
-  color: #ce2076;
-}
-
-.footFooter {
-  color: #04cfdd;
-  font-size: 8px;
-  padding-bottom: 20px;
-}
+  .footerLink {
+    margin: 10px 10px 10px 10px;
+    font-size: 9px;
+    color: #ce2076;
+  }
+  .footFooter {
+    color: #04cfdd;
+    font-size: 8px;
+    padding-bottom: 20px;
+  }

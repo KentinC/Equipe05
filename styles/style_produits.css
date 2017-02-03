@@ -1,4 +1,4 @@
-@font-face {
+  @font-face {
   font-family: 'Vaivai Handwritting Regular Mac';
   src: url('../polices/Vaivai%20Handwritting%20Regular%20Mac.ttf');
 }
@@ -184,7 +184,7 @@ RESEAUX SOCIAUX
 
 .social {
   position: fixed;
-  z-index:50;
+  z-index: 50;
   width: 40px;
 }
 
@@ -217,6 +217,7 @@ RESEAUX SOCIAUX
   right: 275px;
   bottom: 5px;
 }
+
 
 /****************************
 
@@ -586,7 +587,7 @@ RESPONSIVE
   }
 }
 
-@media screen and (min-width:300px) and (max-width: 399px) {
+@media screen and (max-width: 399px) {
   #bloc3 p,
   #bloc2 p,
   #bloc1 p {
@@ -642,29 +643,14 @@ footer {
   padding-top: 20px;
 }
 
-@media screen and (min-width:640px) {
 .footerLink {
   margin: 10px 10px 10px 10px;
-  font-size: 18px;
+  font-size: 95%;
   color: #ce2076;
 }
 
 .footFooter {
   color: #04cfdd;
-  font-size: 20px;
-  padding-bottom: 20px;
-}
-}
-
-@media screen and (max-width:639px) {
-.footerLink {
-  margin: 10px 10px 10px 10px;
-  font-size: 9px;
-  color: #ce2076;
-}
-
-.footFooter {
-  color: #04cfdd;
-  font-size: 8px;
-  padding-bottom: 20px;
+  font-size: 100%;
+  padding-bottom: 60px;
 }
